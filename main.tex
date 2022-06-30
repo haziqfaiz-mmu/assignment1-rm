@@ -5,7 +5,7 @@
 \usepackage{enumitem} 
 \usepackage{lscape}
 \usepackage{hyperref} 
-\usepackage{apacite}
+%\usepackage{apacite}
 \usepackage{booktabs}
 \usepackage{tikz}
 \usepackage{multicol} 
@@ -30,18 +30,19 @@
 \vspace{2.5cm}
 \Large{\textbf{ASSIGNMENT 1}} \\
 \vspace{1cm}
-\Large{\textbf{COVID-19 Outbreak Prediction using Machine Learning Techniques}} \\
+\Large{\textbf{Detecting Abusive and Hateful Content on Social Media Using Machine Learning and Deep Learning}} \\
 \vspace{1cm}
  
 
 
-\vspace{6.5cm}
+\vspace{3.5cm}
 
 
 \normalsize{Prepared by} \\
 \vspace{2.5cm}
-\large{\textbf{Member Name 1, Student ID 1, Contact Number 1}} \\ 
-\large{\textbf{Member Name 1, Student ID 1, Contact Number 1}} \\ 
+\large{\textbf{Muhammad Haziq Faiz Bin Mohd Ripin, 1201302740, 0132061817}} \\ 
+\large{\textbf{Mohammad ShahrulAzwan bin Mohd Shafiri, 1201302552 , 01128331409}} \\ 
+\large{\textbf{Syed, Student ID 1, Contact Number 1}} \\
 \large{\textbf{Member Name 1, Student ID 1, Contact Number 1}} \\ 
  
 
@@ -53,65 +54,26 @@
 
 % ============================================
 
-\section{Flowchart}
+\section{Introduction}
 
 Provide a detailed discussion about the process flow. Use a diagram to help in explanation. Provide all necessary investigation about the dataset here...
 
-\begin{tikzpicture}[node distance=2cm]
-\node (start) [startstop] {Start};
-\node (in1) [io, right of=start, xshift=0.5cm] {Input};
-\node (pro1) [process, right of=in1, xshift=1.5cm] {Process 1}; 
-\node (dec1) [decision, right of=pro1, xshift=1.5cm] {Decision 1};
-\node (pro2a) [process, right of=dec1, xshift=1.7cm] {Process 2a};
-\node (pro2b) [process, above of=dec1, yshift=1cm] {Process 2b};
-\node (out1) [io, below of=pro2a] {Output};
-\node (stop) [startstop, below of=out1] {Stop};
-
-\draw [arrow] (start) -- (in1);
-\draw [arrow] (in1) -- (pro1);
-\draw [arrow] (pro1) -- (dec1); 
-\draw [arrow] (dec1) -- node[anchor=north] {yes} (pro2a);
-\draw [arrow] (dec1) -- node[anchor=east] {no} (pro2b);
-\draw [arrow] (pro2b) -- (pro1);
-\draw [arrow] (pro2a) -- (out1);
-\draw [arrow] (out1) -- (stop);
-
-
-\end{tikzpicture}
-
-
-\section{Insert Table}
+\section{Limitations, Challenges and Problems}
 
 In this section, you firstly should discuss why you select a particular model. Why? Answer this first. Then, discuss the performances of models under different settings. You must provide a table for different settings, such as:
 
-\begin{table}[h]
-\begin{tabular}{|l|l|}
-\hline
-Experiment & Parameter Setting          \\ \hline
-$\xi1$         & depth = 3, leaf nodes = 10 \\ \hline
-$\xi2$          & ...etc                     \\ \hline
-$\xi3$         & ...etc                     \\ \hline
-\end{tabular}
-\end{table}
 
-Provide also a ROC for comparison.
-You should add more. Above is just some ideas for your to get things started!
-
-\section{Diagrams}
+\section{Proposed Solution}
 
 The models developed has been deployed at http://????
 The sample screenshots are given below:
 
-\begin{figure*}[h]
-\begin{multicols}{2}
-    \includegraphics[width=\linewidth]{mmu.png}\par 
-    \includegraphics[width=\linewidth]{mmu.png}\par 
-    \end{multicols}
-\begin{multicols}{2}
-    \includegraphics[width=\linewidth]{mmu.png}\par
-    \includegraphics[width=\linewidth]{mmu.png}\par
-\end{multicols}
-\caption{Screenshot of Streamlit}
-\end{figure*}
+\section{Future Work}
+\section{Conclusion}
+There are many research works that employed
+analytics for retail. One of them is a work
+reported in \cite{DBLP:journals/corr/abs-1905-12516}.
 
+\bibliographystyle{plain}
+\bibliography{mybib}{}
 \end{document}
